@@ -143,7 +143,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 # Add user to docker group (log out / in or newgrp to apply)
 sudo usermod -aG docker $USER
-newgrp docker
+sudo newgrp docker
 docker ps
 ```
 If Jenkins needs Docker access:
